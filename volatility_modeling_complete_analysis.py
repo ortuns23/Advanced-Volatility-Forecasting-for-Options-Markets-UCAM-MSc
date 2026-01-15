@@ -1,6 +1,29 @@
 #!/usr/bin/env python
 # coding: utf-8
 
+# Volatility Modeling Complete Analysis
+
+## Descripción
+Análisis exhaustivo comparando modelos de volatilidad financiera:
+- Modelos tradicionales (Black-Scholes, Heston)
+- Aprendizaje profundo (LSTM)
+- Sistema híbrido LSTM-Heston
+
+## Características Principales
+1. **Implementación completa** de modelos de volatilidad
+2. **Análisis comparativo** con múltiples métricas
+3. **Visualizaciones 3D** de superficies de volatilidad
+4. **Análisis de sonrisas de volatilidad**
+5. **Validación robusta** y análisis de sensibilidad
+
+## Estructura del Código
+- Calibración de modelos
+- Generación de datos sintéticos
+- Entrenamiento de redes LSTM
+- Sistema híbrido adaptativo
+- Evaluación estadística completa
+- Visualizaciones profesionales
+
 # In[ ]:
 
 
