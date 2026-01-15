@@ -1,6 +1,70 @@
 #!/usr/bin/env python
 # coding: utf-8
 
+"""
+===============================================================================
+MODELOS DE VALORACIÓN DE OPCIONES FINANCIERAS - Análisis y Simulación
+===============================================================================
+
+DESCRIPCIÓN:
+Este script implementa y compara modelos de valoración de opciones financieras,
+incluyendo Black-Scholes, Heston, modelos híbridos tradicionales y un modelo
+híbrido LSTM-Heston con componentes de redes neuronales.
+
+MODELOS IMPLEMENTADOS:
+1. Black-Scholes (volatilidad constante)
+2. Heston (volatilidad estocástica)
+3. Híbrido Black-Scholes-Heston
+4. Híbrido LSTM-Heston con redes neuronales
+
+CARACTERÍSTICAS:
+- Visualizaciones 3D interactivas de superficies de precios
+- Simuladores interactivos con controles deslizantes (ipywidgets)
+- Análisis de sonrisas de volatilidad
+- Integración de modelos estadísticos con deep learning
+- Comparación cuantitativa entre diferentes modelos
+
+REQUISITOS:
+- Python 3.7+
+- numpy, scipy, matplotlib
+- keras (para modelos LSTM)
+- ipywidgets (para interactividad)
+- scikit-learn (para división de datos)
+
+USO BÁSICO:
+1. Ejecutar el script completo para ver todas las visualizaciones
+2. Usar funciones individuales para análisis específicos:
+   - black_scholes_call(): Precio call Black-Scholes
+   - heston_call(): Precio call modelo Heston
+   - hybrid_model_lstm_heston(): Modelo híbrido LSTM-Heston
+3. Ajustar parámetros con controles interactivos
+
+EJEMPLO DE USO INTERACTIVO:
+>>> interact(plot_black_scholes, 
+             S=(80, 120, 1), 
+             K=(80, 120, 1), 
+             T=(0.1, 2, 0.1), 
+             r=(0.01, 0.1, 0.01), 
+             sigma=(0.01, 0.5, 0.01))
+
+PARÁMETROS CLAVE:
+- S: Precio subyacente
+- K: Precio de ejercicio
+- T: Tiempo hasta vencimiento
+- r: Tasa libre de riesgo
+- sigma: Volatilidad (Black-Scholes)
+- v0, theta, kappa, sigma, rho: Parámetros Heston
+
+AUTORES:
+- Ortuzar De La Riva
+- [Otros colaboradores]
+
+FECHA: [Fecha de creación/última modificación]
+LICENCIA: MIT
+===============================================================================
+"""
+
+
 # In[1]:
 
 
