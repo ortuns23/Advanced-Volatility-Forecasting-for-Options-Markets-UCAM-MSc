@@ -1,6 +1,27 @@
 #!/usr/bin/env python
 # coding: utf-8
 
+# 📈 Modelo Híbrido LSTM-Heston para Valoración de Opciones
+
+Este proyecto implementa un modelo híbrido que combina el **modelo de volatilidad estocástica de Heston** con una **red neuronal LSTM** para mejorar la precisión en la valoración de opciones financieras.
+
+## 🚀 Características principales
+
+- ✅ Modelo híbrido: Heston + LSTM
+- ✅ Simulación Monte Carlo para trayectorias de volatilidad
+- ✅ Entrenamiento de red LSTM con regularización (Dropout)
+- ✅ Visualización 3D de superficies de volatilidad implícita
+- ✅ Comparación con modelos tradicionales (Black-Scholes, Heston puro)
+- ✅ Métricas de evaluación extensas (MSE, MAE, R², RMSE, etc.)
+- ✅ Análisis de sensibilidad y convergencia
+
+## 🛠️ Instalación
+
+1. Clona el repositorio:
+```bash
+git clone https://github.com/tu_usuario/lstm-heston-hybrid.git
+cd lstm-heston-hybrid
+
 # In[ ]:
 
 
