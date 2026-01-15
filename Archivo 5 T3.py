@@ -1,6 +1,26 @@
 #!/usr/bin/env python
 # coding: utf-8
 
+# Volatility Modeling Comparison
+
+## Descripción
+Análisis comparativo de modelos de volatilidad financiera: modelos tradicionales (Black-Scholes, Heston) vs. aprendizaje profundo (LSTM) vs. sistema híbrido LSTM-Heston.
+
+## Características
+- Calibración de parámetros del modelo Heston
+- Entrenamiento y evaluación de modelos LSTM
+- Sistema híbrido adaptativo LSTM-Heston
+- Validación estadística rigurosa
+- Visualizaciones profesionales de resultados
+
+## Tecnologías
+- Python 3.x
+- TensorFlow/Keras
+- NumPy, Pandas
+- Matplotlib, Seaborn
+- Scipy, Statsmodels
+
+
 # 3.1.3 Calibración de parámetros y configuración de modelos 
 
 # 1 — Tabla con parámetros calibrados (Heston)
