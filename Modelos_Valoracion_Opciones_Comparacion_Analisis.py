@@ -1,6 +1,51 @@
 #!/usr/bin/env python
 # coding: utf-8
 
+# 📈 Análisis Comparativo de Modelos de Valoración de Opciones
+
+## 🎯 Descripción del Proyecto
+
+Este proyecto realiza una comparación exhaustiva entre **tres modelos fundamentales de valoración de opciones financieras**:
+- **Modelo Black-Scholes** (volatilidad constante)
+- **Modelo Heston** (volatilidad estocástica)
+- **Modelo Híbrido Black-Scholes-Heston** (combinación de ambos)
+
+El objetivo es evaluar la **eficiencia y precisión** de cada modelo bajo diferentes condiciones de volatilidad del mercado.
+
+## 📊 Modelos Implementados
+
+### 1. **Modelo Black-Scholes**
+- Fórmula analítica cerrada para opciones europeas
+- Supuestos: volatilidad constante, sin dividendos, eficiencia de mercados
+- Implementación: `black_scholes_call()`
+
+### 2. **Modelo Heston**
+- Modelo de volatilidad estocástica
+- Dos variantes: volatilidad constante y variable en el tiempo
+- Implementación mediante simulaciones de Monte Carlo
+- Funciones: `heston_call_constant_volatility()`, `heston_call_time_varying_volatility()`
+
+### 3. **Modelo Híbrido**
+- Combinación de los modelos Black-Scholes y Heston
+- Busca aprovechar las ventajas de ambos enfoques
+- Implementación: `hybrid_model_call()`
+
+## 📈 Métricas de Evaluación
+
+Se utilizan las siguientes métricas para comparar los modelos:
+
+| Métrica | Descripción | Fórmula |
+|---------|-------------|---------|
+| **MSE** | Error Cuadrático Medio | $\frac{1}{n}\sum(y_i - \hat{y}_i)^2$ |
+| **RMSE** | Raíz del Error Cuadrático Medio | $\sqrt{\text{MSE}}$ |
+| **MAE** | Error Absoluto Medio | $\frac{1}{n}\sum\|y_i - \hat{y}_i\|$ |
+| **R²** | Coeficiente de Determinación | $1 - \frac{\text{SS}_{res}}{\text{SS}_{tot}}$ |
+
+## 📁 Estructura del Código
+
+
+
+
 # In[ ]:
 
 
